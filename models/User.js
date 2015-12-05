@@ -1,6 +1,7 @@
 'use strict';
 var mongoose = require('mongoose');
 var ObjectId = mongoose.Schema.Types.ObjectId;
+var DEFAULT_CREDIT_LINE = 20.00;
 
 function setCredit(num) {
     return Math.round(num * 100) / 100;
@@ -25,14 +26,12 @@ var UserSchema = new mongoose.Schema({
     total_credit_line: {
         type: Number,
         set: setCredit,
-        required: true,
-        default: 20.00
+        default: DEFAULT_CREDIT_LINE
     },
     current_credit_line: {
         type: Number,
         set: setCredit,
-        required: true,
-        default: 20.00
+        default: DEFAULT_CREDIT_LINE
     },
     updated_at: {
         type: Date,
