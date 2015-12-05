@@ -1,12 +1,41 @@
 var mongoose = require('mongoose');
+var ObjectId = mongoose.Schema.Types.ObjectId;
+var validator = require('mongoose-validator');
 
 var UserSchema = new mongoose.Schema({
-  name: String,
-  completed: Boolean,
-  note: String,
-  total_credit_line: { type: Number, amount: setCredit, default: 20.00 },
-  current_credit_line: { type: Number, amount: setCredit, default: 20.00 },
-  updated_at: { type: Date, default: Date.now }
+    name: {
+        type: String,
+        required: true
+    },
+    email: {
+        type: String,
+        lowercase: true,
+        trim: true,
+        validate: [validator.isEmail],
+        required: true,
+        match: /.+\@.+\..+/
+    },
+    password: {
+        type: String,
+        required: true
+    },
+    total_credit_line: {
+        type: Number,
+        set: setCredit,
+        required: true,
+        default: 20.00
+    },
+    current_credit_line: {
+        type: Number,
+        set: setCredit,
+        required: true,
+        default: 20.00
+    },
+    updated_at: {
+        type: Date,
+        default: Date.now
+    },
+    total_loans: [{ type: ObjectId, ref: 'Loan' }]
 });
 
 function setCredit(num) {
