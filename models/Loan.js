@@ -1,4 +1,5 @@
 var mongoose = require('mongoose');
+var ObjectId = mongoose.Schema.Types.ObjectId;
 
 function setOneMonthFromNow() {
     var date = Date.now;
@@ -9,6 +10,10 @@ function setOneMonthFromNow() {
 }
 
 var LoanSchema = new mongoose.Schema({
+    loan_to: {
+        type: ObjectId,
+        ref: 'User'
+    },
     created_at: {
         type: Date,
         default: Date.now
