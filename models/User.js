@@ -1,6 +1,10 @@
+'use strict';
 var mongoose = require('mongoose');
 var ObjectId = mongoose.Schema.Types.ObjectId;
-var validator = require('mongoose-validator');
+
+function setCredit(num) {
+    return Math.round(num * 100) / 100;
+}
 
 var UserSchema = new mongoose.Schema({
     name: {
@@ -11,7 +15,6 @@ var UserSchema = new mongoose.Schema({
         type: String,
         lowercase: true,
         trim: true,
-        validate: [validator.isEmail],
         required: true,
         match: /.+\@.+\..+/
     },
@@ -38,8 +41,5 @@ var UserSchema = new mongoose.Schema({
     total_loans: [{ type: ObjectId, ref: 'Loan' }]
 });
 
-function setCredit(num) {
-    return Math.round(num * 100) / 100;
-}
 
 module.exports = mongoose.model('User', UserSchema);

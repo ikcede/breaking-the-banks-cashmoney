@@ -15,7 +15,7 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-mongoose.connect('mongodb://localhost:27017/cashmoney', function(err) {
+mongoose.connect('mongodb://localhost:27017/credit22', function(err) {
     if(err) {
         console.log('connection error', err);
     } else {
