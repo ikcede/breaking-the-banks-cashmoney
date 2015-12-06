@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/dashboard', function(req, res, next) {
-    res.render('dashboard', { title: 'Dashboard' });
+    res.render('dashboard', { title: 'Dashboard', layout: 'layouts/dashlayout' });
 });
 
 router.get('/signup', function(req, res, next) {

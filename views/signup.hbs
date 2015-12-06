@@ -15,10 +15,10 @@
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <form class="navbar-right login-form">
-                <input type="text" class="input-dark" name="username" placeholder="Username">
+            <form class="navbar-right login-form" method="POST" action="/">
+                <input type="email" class="input-dark" name="email" placeholder="Email" autocomplete="false">
             
-                <input type="text" class="input-dark" name="password" placeholder="Password">
+                <input type="password" class="input-dark" name="password" placeholder="Password">
             
                 <button type="submit" class="btn btn-primary">Sign In</button>
             </form>
@@ -28,10 +28,72 @@
     <!-- /.container -->
 </nav>
     
-  
+<div class="container" style="padding-top:100px; max-width: 600px">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3">
+                <input type="text" class="form-control" placeholder="First Name">
+                <input type="text" class="form-control" placeholder="First Name">
+             </div>
+        </div>
+        </br>
+        
+    <div class="row">
+        <form role="form" method="POST">
+
+            <div class="col-lg-6">
+                <div class="well well-sm"><strong><span class="glyphicon glyphicon-asterisk"></span>Required Field</strong></div>
+                <div class="form-group">
+                    <label for="firstname">First Name</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="firstname" id="firstname" placeholder="First Name" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Last Name</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Last Name" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <div class="input-group">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="input-group">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="confirmpassword">Confirm Password</label>
+                    <div class="input-group">
+                        <input type="password" class="form-control" id="confirmpassword" name="confirmpassword" placeholder="Confirm Password" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="ssn">Social Security Number</label>
+                    <div class="input-group">
+                        <input type="number" class="form-control" id="ssn" name="ssn" placeholder="SSN" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>                
+                <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
+            </div>
+        </form>
+        
+    </div>
+</div>
     
-    
-    
+</div>  
+
     
     
 

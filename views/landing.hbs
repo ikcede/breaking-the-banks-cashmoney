@@ -59,10 +59,10 @@
                         <a href="#">Contact</a>
                     </li>
                 </ul>-->
-                <form class="navbar-right login-form">
-                    <input type="text" class="input-dark" name="username" placeholder="Username">
+                <form class="navbar-right login-form" method="POST" action="/">
+                    <input type="email" class="input-dark" name="email" placeholder="Email" autocomplete="false">
                 
-                    <input type="text" class="input-dark" name="password" placeholder="Password">
+                    <input type="password" class="input-dark" name="password" placeholder="Password">
                 
                     <button type="submit" class="btn btn-primary">Sign In</button>
                 </form>
@@ -86,7 +86,7 @@
                     <div class="tween">Or, you could can use Credit 22.</div>
                 </p>
                 <p class="tween">
-                    <a class="btn btn-primary btn-large" id="signup">Sign Up Now</a>
+                    <a class="btn btn-primary btn-large" id="signup" href="/signup">Sign Up Now</a>
                 </p>
             </header>
         </div>

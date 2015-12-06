@@ -1,9 +1,63 @@
 
+/* Navbar styling */
+
 .navbar-brand {
     font-family: lato, sans-serif;
     font-weight: 400;
     letter-spacing: 3px;
 }
+
+/* Sidebar styling */
+
+.sidebar {
+    width:80px;
+    position:fixed;
+    left:0;
+    top:50px;
+    height:100%;
+    
+    border-right: 1px solid lightgrey;
+}
+
+ul {
+    list-style-type:none;
+    padding:0px;
+    margin:0px;
+}
+
+ul.list-icon {
+    
+}
+
+.list-icon li {
+    text-align:center;
+    width:80px;
+    height:80px;
+    
+    font-size:20px;
+    color:darkgrey;
+    
+    border-bottom:1px solid lightgrey;
+    cursor:pointer;
+}
+
+.list-icon li.active {
+    border-left:7px solid #18AD18;
+}
+
+.list-icon li:hover {
+    background:grey;
+    color:gainsboro;
+}
+
+/* Main page styling */
+
+.page-wrapper {
+    margin-top:50px;
+    margin-left:80px;
+}
+
+/* Other styling */
 
 .input-dark {
     color: white;
@@ -29,4 +83,8 @@
 
 footer {
     padding:15px;
+}
+
+#signupinfo {
+    
 }
