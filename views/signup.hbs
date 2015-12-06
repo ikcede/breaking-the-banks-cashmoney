@@ -11,7 +11,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">CREDIT22</a>
+            <a class="navbar-brand" href="/">CREDIT22</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -28,74 +28,60 @@
     <!-- /.container -->
 </nav>
     
-<div class="container" style="padding-top:100px; max-width: 600px">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-3">
-                <input type="text" class="form-control" placeholder="First Name">
-                <input type="text" class="form-control" placeholder="First Name">
-             </div>
-        </div>
-        </br>
-        
-    <div class="row">
-        <form role="form" method="POST">
-
-            <div class="col-lg-6">
-                <div class="well well-sm"><strong><span class="glyphicon glyphicon-asterisk"></span>Required Field</strong></div>
-                <div class="form-group">
-                    <label for="firstname">First Name</label>
-                    <div class="input-group">
-                        <input type="text" class="form-control" name="firstname" id="firstname" placeholder="First Name" required>
-                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="lastname">Last Name</label>
-                    <div class="input-group">
-                        <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Last Name" required>
-                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <div class="input-group">
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
-                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <div class="input-group">
-                        <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
-                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="confirmpassword">Confirm Password</label>
-                    <div class="input-group">
-                        <input type="password" class="form-control" id="confirmpassword" name="confirmpassword" placeholder="Confirm Password" required>
-                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="ssn">Social Security Number</label>
-                    <div class="input-group">
-                        <input type="number" class="form-control" id="ssn" name="ssn" placeholder="SSN" required>
-                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
-                    </div>
-                </div>                
-                <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
+    
+<div class="container" style="padding-top:80px; max-width: 550px">
+    <h2 style="color: #101010; text-align: center; padding: 20px; ">Sign Up Now</h2>
+    <form method="POST">
+        <div class="form-group row">
+            <label for="fn" class="col-sm-3 form-control-label">First Name</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" id="fn" name="fn" placeholder="Enter your first name" required>
             </div>
-        </form>
+        </div>
+        <div class="form-group row">
+            <label for="ln" class="col-sm-3 form-control-label">Last Name</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" id="ln" name="ln" placeholder="Enter your last name" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="email" class="col-sm-3 form-control-label">Email</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="pw" class="col-sm-3 form-control-label">Password</label>
+            <div class="col-sm-9">
+                <input type="password" class="form-control" id="pw" name="pw" placeholder="Choose a password" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="pw2" style="padding-top: 0px;" class="col-sm-3 form-control-label">Confirm Password</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" id="pw2" name="pw2" placeholder="Enter password again" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="ssn" class="col-sm-3 form-control-label">SSN</label>
+            <div class="col-sm-9">
+                <input type="number" class="form-control" id="ssn" name="ssn" placeholder="Enter your social security number" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="dob" class="col-sm-3 form-control-label">DOB</label>
+            <div class="col-sm-9">
+                <input type="date" class="form-control" id="dob" name="dob" placeholder="Enter your date of birth" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-6 col-sm-offset-5">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
         
-    </div>
+    </form>
 </div>
-    
-</div>  
-
-    
-    
 
 <footer>
     <div class="row">

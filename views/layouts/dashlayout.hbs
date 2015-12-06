@@ -37,26 +37,38 @@
     
         <ul class="list-icon">
             
-            <li class="active">
+            <a href="/dashboard">
+            <li {{#if active.home}}class="active"{{/if}}>
                 <br/>
                 <span class="glyphicon glyphicon-home"></span>
                 <span class="sr-only">Home</span>
             </li>
-            <li>
+            </a>
+            
+            <a href="/loan">
+            <li {{#if active.loan}}class="active"{{/if}}>
                 <br/>
                 <span class="glyphicon glyphicon-usd"></span>
                 <span class="sr-only">Loan</span>
+               
             </li>
-            <li>
+            </a>
+            
+            <a href="/pay">
+            <li {{#if active.pay}}class="active"{{/if}}>
                 <br/>
                 <span class="glyphicon glyphicon-tags"></span>
                 <span class="sr-only">Pay Loan</span>
             </li>
-            <li>
+            </a>
+            
+            <a href="/settings">
+            <li {{#if active.settings}}class="active"{{/if}}>
                 <br/>
                 <span class="glyphicon glyphicon-cog"></span>
                 <span class="sr-only">Settings</span>
             </li>
+            </a>
             
         </ul>
         

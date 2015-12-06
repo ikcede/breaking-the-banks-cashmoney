@@ -73,18 +73,16 @@ ul.list-icon {
     margin-top: 8px;
 }
 
-@media (min-width: 768px) {
-  footer {
-      position:fixed;
-      bottom:0;
-      width:100%;
-  }
-}
-
 footer {
     padding:15px;
 }
 
-#signupinfo {
-    
+label {
+    padding-top: 7px;
+}
+
+.panel .panel-body {
+    height: 200px;
+    font-size: 100px;
+    text-align: center;
 }
