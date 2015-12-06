@@ -7,6 +7,10 @@
     letter-spacing: 3px;
 }
 
+.navbar-right {
+    margin-right: 0px;
+}
+
 /* Sidebar styling */
 
 .sidebar {
@@ -17,6 +21,7 @@
     height:100%;
     
     border-right: 1px solid lightgrey;
+    background:white;
 }
 
 ul {
@@ -81,8 +86,15 @@ label {
     padding-top: 7px;
 }
 
+.panel {
+    margin-top: 10px;
+    box-shadow: 2px 2px 5px grey;
+}
+
 .panel .panel-body {
-    height: 200px;
-    font-size: 100px;
-    text-align: center;
+   
+}
+
+.golden {
+    text-shadow: 3px 3px 8px #BF7F00, -3px -3px 8px #BF7F00;
 }
