@@ -12,6 +12,7 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 var loans = require('./routes/loans');
 var payments = require('./routes/payments');
+var login = require('./routes/login'); // for mobile
 
 var app = express();
 
@@ -28,7 +29,7 @@ mongoose.connect('mongodb://localhost:27017/credit22', function(err) {
 });
 
 passport.use(new LocalStrategy(
-  function(email, password, done) {
+  function(email, password, done) {    
     User.findOne({ email: email, password: password }, function (err, user) {
       if (err) { return done(err); }
       if (!user) { return done(null, false); }
@@ -55,6 +56,7 @@ app.use(passport.session());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
+app.use('/login', login);
 app.use('/api/users', users);
 app.use('/api/loans', loans);
 app.use('/api/payments', payments);
