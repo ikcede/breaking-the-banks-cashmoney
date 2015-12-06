@@ -99,7 +99,7 @@ label {
     font-weight:100;
     font-size:60px;
     color:#363A08;
-    text-shadow: 1px 1px 3px #BF7F00, -1px -1px 3px #BF7F00;
+    /*text-shadow: 1px 1px 3px #BF7F00, -1px -1px 3px #BF7F00;*/
 }
 
 .calculations {
