@@ -96,5 +96,24 @@ label {
 }
 
 .golden {
-    text-shadow: 3px 3px 8px #BF7F00, -3px -3px 8px #BF7F00;
+    font-weight:100;
+    font-size:60px;
+    color:#363A08;
+    text-shadow: 1px 1px 3px #BF7F00, -1px -1px 3px #BF7F00;
+}
+
+.calculations {
+    font-size: 24px;
+    font-family: Arial;
+    font-weight:400;
+    padding-bottom:10px;
+}
+
+.panel-title {
+    display:inline-block;
+}
+
+.red-link {
+    color: #BB4E4E;
+    text-decoration: underline;
 }
