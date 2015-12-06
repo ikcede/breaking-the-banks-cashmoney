@@ -17,6 +17,10 @@
 
     <!-- Custom CSS -->
     <link href="stylesheets/bootstrap/heroic-features.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,11 +44,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
+                <a class="navbar-brand" href="#">CREDIT22</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
+                <!--<ul class="nav navbar-nav">
                     <li>
                         <a href="#">About</a>
                     </li>
@@ -54,7 +58,14 @@
                     <li>
                         <a href="#">Contact</a>
                     </li>
-                </ul>
+                </ul>-->
+                <form class="navbar-right login-form">
+                    <input type="text" class="input-dark" name="username" placeholder="Username">
+                
+                    <input type="text" class="input-dark" name="password" placeholder="Password">
+                
+                    <button type="submit" class="btn btn-primary">Sign In</button>
+                </form>
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -66,87 +77,73 @@
         
             <!-- Jumbotron Header -->
             <header class="jumbotron hero-spacer">
-                <h1>A Warm Welcome!</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
-                <p><a class="btn btn-primary btn-large">Call to action!</a>
+                <h1 class="tween">Credit 22</h1>
+                <p>
+                    <div class="tween">What do you need to get a credit card? A good credit score.</div>
+                    <div class="tween">What helps you build good credit score? A credit card.</div>
+                </p>
+                <p>
+                    <div class="tween">Or, you could can use Credit 22.</div>
+                </p>
+                <p class="tween">
+                    <a class="btn btn-primary btn-large" id="signup">Sign Up Now</a>
                 </p>
             </header>
         </div>
     </div>
+    
+    
+    {{!--<div class="breaker"></div>--}}
 
-    <div class="container">
-        <!-- Title -->
+    {{!--<div class="wrapper">--}}
+    {{!--    <div class="container" style="padding-top: 25px;">--}}
+    
+    {{!--        <!-- Page Features -->--}}
+    {{!--        <div class="row text-center">--}}
+    
+    {{!--            <div class="col-md-4 col-sm-6 hero-feature">--}}
+                    
+    {{!--            </div>--}}
+    
+    {{!--            <div class="col-md-4 col-sm-6 hero-feature">--}}
+                   
+    {{!--            </div>--}}
+    
+    {{!--            <div class="col-md-4 col-sm-6 hero-feature">--}}
+                    
+    {{!--            </div>--}}
+    
+    {{!--        </div>--}}
+    {{!--        <!-- /.row -->--}}
+    
+    {{!--    </div>--}}
+    {{!--    <!-- /.container -->--}}
+    {{!--</div>--}}
+    
+    
+    <footer>
         <div class="row">
-            <div class="col-lg-12">
-                <h3>Latest Features</h3>
+            <div class="col-lg-12 text-muted text-right">
+                <p>Copyright &copy; Credit22 2015</p>
             </div>
         </div>
-        <!-- /.row -->
+    </footer>
 
-        <!-- Page Features -->
-        <div class="row text-center">
-
-            <div class="col-md-4 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
-                    <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
-                    <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
-                    <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
-                </div>
-            </div>
-        </footer>
-
-    </div>
-    <!-- /.container -->
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script type="text/javascript">
+        
+        $(document).ready(function() {
+          TweenMax.staggerFrom(".tween", 1, {opacity:0, delay:1}, 1);
+          TweenMax.to(".tween", 1, {opacity:1, delay:5});
+        });
+        
+    </script>
 
 </body>
 
