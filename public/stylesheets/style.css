@@ -1,12 +1,32 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+.navbar-brand {
+    font-family: lato, sans-serif;
+    font-weight: 400;
+    letter-spacing: 3px;
 }
 
-a {
-  color: #00B7FF;
+.input-dark {
+    color: white;
+    background: #222;
+    width: 140px;
+    font-family: opensans, sans-serif;
+    border: 1px solid #505050;
+    padding:6px 10px;
+    border-radius:5px;
 }
 
-.p10 {
-  padding:10px;
+.login-form {
+    margin-top: 8px;
+}
+
+@media (min-width: 768px) {
+  footer {
+      position:fixed;
+      bottom:0;
+      width:100%;
+  }
+}
+
+footer {
+    padding:15px;
 }
