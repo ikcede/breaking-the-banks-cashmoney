@@ -77,16 +77,16 @@
         
             <!-- Jumbotron Header -->
             <header class="jumbotron hero-spacer">
-                <h1>Credit 22</h1>
+                <h1 class="tween">Credit 22</h1>
                 <p>
-                    What do you need to get a credit card? A good credit score.
-                    <br/>
-                    What helps you build good credit score? A credit card.
+                    <div class="tween">What do you need to get a credit card? A good credit score.</div>
+                    <div class="tween">What helps you build good credit score? A credit card.</div>
                 </p>
                 <p>
-                    Or, you could can use Credit 22.
+                    <div class="tween">Or, you could can use Credit 22.</div>
                 </p>
-                <p><a class="btn btn-primary btn-large">Sign Up Now</a>
+                <p class="tween">
+                    <a class="btn btn-primary btn-large" id="signup">Sign Up Now</a>
                 </p>
             </header>
         </div>
@@ -135,6 +135,15 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script type="text/javascript">
+        
+        $(document).ready(function() {
+          TweenMax.staggerFrom(".tween", 1, {opacity:0, delay:1}, 1);
+          TweenMax.to(".tween", 1, {opacity:1, delay:5});
+        });
+        
+    </script>
 
 </body>
 
